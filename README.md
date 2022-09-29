@@ -15,7 +15,7 @@ ES6-Awesome-books project is a basic website that allows users to add/remove boo
 - ES6-Javascript
 
 ## Live Demo
-
+[Live Demo Link](https://rugwizangoga.github.io/ES6-Awesome-Books/)
 ## Getting Started
 
 $ git clone git@github.com:rugwizangoga/ES6-Awesome-Books.git
