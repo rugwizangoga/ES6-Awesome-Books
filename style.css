@@ -7,7 +7,7 @@
 }
 
 main {
-  height: 98vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,6 +15,14 @@ main {
 
 header {
   width: 100%;
+}
+
+.time {
+  width: 92%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 
 nav {
