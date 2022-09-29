@@ -1,6 +1,8 @@
-import { Book } from "./Book.js";
+/* eslint-disable max-classes-per-file */
 
-export class BooksList {
+import Book from './Book.js';
+
+export default class BooksList {
   storedbooks = [];
 
   count = 0;
@@ -9,7 +11,7 @@ export class BooksList {
     this.book = book;
   }
 
-  printbook= () =>{
+  printbook= () => {
     const books = document.getElementById('books');
     const bookdata = JSON.parse(window.localStorage.getItem('books'));
     this.storedbooks = bookdata;

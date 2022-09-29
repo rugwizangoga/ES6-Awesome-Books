@@ -1,8 +1,7 @@
-
-import { BooksList } from "./BooksList.js";
-import { time } from "./Dates.js";
-
 /* eslint-disable max-classes-per-file */
+
+import BooksList from './BooksList.js';
+import timenow from './Dates.js';
 
 const addnew = document.getElementById('addnew');
 const read = document.getElementById('read');
@@ -13,9 +12,9 @@ const then = document.getElementById('then');
 const navitem = document.querySelectorAll('.navitem');
 const timer = document.querySelector('.time');
 
-const today = time();
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-timer.innerHTML = `<p>${months[today.month-1]}&nbsp ${today.day}th &nbsp ${today.year}, &nbsp ${today.hour}: ${today.min} ${today.mid}<p>`;
+const today = timenow;
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+timer.innerHTML = `<p>${months[today.month - 1]}&nbsp ${today.day}th &nbsp ${today.year}, &nbsp ${today.hour}: ${today.min} ${today.mid}<p>`;
 addnew.classList.add('active');
 contact.classList.add('active');
 now.classList.add('active');
@@ -47,7 +46,6 @@ navitem.forEach((item) => {
     }
   });
 });
-
 
 const mystore = new BooksList();
 
